@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0B7-Wk-18S">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Distro_Hopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="112" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4eh-qp-t11">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4eh-qp-t11" secondAttribute="bottom" id="4XM-bb-K2f"/>
+                            <constraint firstItem="4eh-qp-t11" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PwK-kF-TSI"/>
+                            <constraint firstItem="4eh-qp-t11" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ehJ-Bs-tmp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4eh-qp-t11" secondAttribute="trailing" id="zv4-AX-gtV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QYP-ps-hx2">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="about" id="hTX-HY-7dT">
+                            <connections>
+                                <segue destination="8VA-bQ-fui" kind="showDetail" id="hQO-E9-yA2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="profil" id="TVJ-Ya-YkO">
+                            <connections>
+                                <segue destination="67H-43-8F2" kind="push" id="EdR-sC-lY9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="distroTableView" destination="4eh-qp-t11" id="ess-2d-SWS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906" y="339"/>
+        </scene>
+        <!--Profil View Controller-->
+        <scene sceneID="H6P-Ks-BEK">
+            <objects>
+                <viewController id="67H-43-8F2" customClass="ProfilViewController" customModule="Distro_Hopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mxt-uz-QhC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="herdin" translatesAutoresizingMaskIntoConstraints="NO" id="bQZ-A0-nbH">
+                                <rect key="frame" x="82" y="128" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="1RU-Y5-njX"/>
+                                    <constraint firstAttribute="width" constant="250" id="qR4-c8-Igs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herdin Lucky Ananda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxa-Du-3SR">
+                                <rect key="frame" x="89" y="413" width="236" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="WEu-Qh-kOX"/>
+                                    <constraint firstAttribute="height" constant="30" id="dMv-0l-C4K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hla12.herdin@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmM-el-ILv">
+                                <rect key="frame" x="112" y="443" width="190" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Js2-3J-iJv"/>
+                                    <constraint firstAttribute="width" constant="190" id="gcP-ri-tTJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bbu-4f-FK0">
+                                <rect key="frame" x="37" y="564" width="340" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJM-L3-qBl" userLabel="FB">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="BXJ-Nd-R5E"/>
+                                            <constraint firstAttribute="height" constant="100" id="Dwz-vN-m92"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="fb"/>
+                                        <connections>
+                                            <action selector="facebook:" destination="67H-43-8F2" eventType="touchUpInside" id="a2C-fD-zXQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWZ-b4-D68" userLabel="IG">
+                                        <rect key="frame" x="120" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="N5x-YZ-18w"/>
+                                            <constraint firstAttribute="width" constant="100" id="T3N-Qy-RcT"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="ig"/>
+                                        <connections>
+                                            <action selector="instagram:" destination="67H-43-8F2" eventType="touchUpInside" id="qK0-E8-Phg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIk-5j-h6K" userLabel="IG">
+                                        <rect key="frame" x="240" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="OIn-Gd-gdv"/>
+                                            <constraint firstAttribute="width" constant="100" id="gpH-Xh-6Fd"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="tg"/>
+                                        <connections>
+                                            <action selector="telegram:" destination="67H-43-8F2" eventType="touchUpInside" id="TeS-Bm-tdc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OT0-LQ-KKB"/>
+                                    <constraint firstAttribute="width" constant="340" id="ies-jH-uNx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rxa-Du-3SR" firstAttribute="top" secondItem="bQZ-A0-nbH" secondAttribute="bottom" constant="35" id="7hO-P3-mfF"/>
+                            <constraint firstItem="bQZ-A0-nbH" firstAttribute="top" secondItem="aOf-ec-gRT" secondAttribute="top" constant="40" id="Ffb-8n-nPb"/>
+                            <constraint firstItem="bbu-4f-FK0" firstAttribute="centerX" secondItem="mxt-uz-QhC" secondAttribute="centerX" id="QVI-pt-a7M"/>
+                            <constraint firstItem="bbu-4f-FK0" firstAttribute="top" secondItem="lmM-el-ILv" secondAttribute="bottom" constant="100" id="RwD-qL-ckp"/>
+                            <constraint firstItem="bQZ-A0-nbH" firstAttribute="centerX" secondItem="mxt-uz-QhC" secondAttribute="centerX" id="V85-jq-Fd2"/>
+                            <constraint firstItem="rxa-Du-3SR" firstAttribute="centerX" secondItem="mxt-uz-QhC" secondAttribute="centerX" id="aO8-lE-XKx"/>
+                            <constraint firstItem="lmM-el-ILv" firstAttribute="top" secondItem="rxa-Du-3SR" secondAttribute="bottom" id="jXa-nZ-S48"/>
+                            <constraint firstItem="lmM-el-ILv" firstAttribute="centerX" secondItem="mxt-uz-QhC" secondAttribute="centerX" id="s0v-WE-G99"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aOf-ec-gRT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="31m-Qa-1wA"/>
+                    <connections>
+                        <outlet property="imgHerdin" destination="bQZ-A0-nbH" id="DwQ-6a-TH9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSN-a3-c54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2725" y="544"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IuD-2r-IDB">
+            <objects>
+                <viewController id="8VA-bQ-fui" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4fI-C4-iKx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Linux" translatesAutoresizingMaskIntoConstraints="NO" id="HJa-3U-ArX">
+                                <rect key="frame" x="87" y="50" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Fbh-mq-k5T"/>
+                                    <constraint firstAttribute="height" constant="240" id="s5O-BW-gGo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIR-a6-MDY">
+                                <rect key="frame" x="20" y="330" width="374" height="251"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="6Oe-h2-rzb"/>
+                                    <constraint firstAttribute="height" constant="251" id="nJa-eV-e5w"/>
+                                </constraints>
+                                <string key="text"> Distro Hopper adalah aplikasi yang membantu untuk menentukan OS yang cocok  bagi pengguna baru maupun pengguna OS Linux yang ingin berpindah dari Distro 1 ke Distro Lain (Distro Hopper). Kemudahan installasi maupun  kustomisasi diurutkan dari termudah (atas) sampai tersulit(bawah). Tetapi jangan khawatir setiap distribusi mempunyai comunity / forum yang siap membantu saat mengalami kendala.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data dikutip dari &quot;Its FOSS&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G70-to-bxn">
+                                <rect key="frame" x="115.5" y="601" width="183" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="78J-P1-3dz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="183" id="gv6-RS-WKa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="G70-to-bxn" firstAttribute="centerX" secondItem="4fI-C4-iKx" secondAttribute="centerX" id="4kO-K2-kRX"/>
+                            <constraint firstItem="HJa-3U-ArX" firstAttribute="top" secondItem="YCe-GB-RCt" secondAttribute="top" constant="50" id="dVN-Gg-MSk"/>
+                            <constraint firstItem="HJa-3U-ArX" firstAttribute="centerX" secondItem="4fI-C4-iKx" secondAttribute="centerX" id="hGk-2y-2qx"/>
+                            <constraint firstItem="OIR-a6-MDY" firstAttribute="centerX" secondItem="4fI-C4-iKx" secondAttribute="centerX" id="pQm-xW-W2J"/>
+                            <constraint firstItem="OIR-a6-MDY" firstAttribute="top" secondItem="HJa-3U-ArX" secondAttribute="bottom" constant="40" id="vCX-NH-Cpi"/>
+                            <constraint firstItem="G70-to-bxn" firstAttribute="top" secondItem="OIR-a6-MDY" secondAttribute="bottom" constant="20" id="xOK-8f-LQq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YCe-GB-RCt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvJ-Ya-9ya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2724.6376811594205" y="-110.49107142857143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mtB-0Z-rUp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0B7-Wk-18S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uwY-OQ-4rL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RkJ-se-l2h" kind="relationship" relationship="rootViewController" id="eg7-9b-ya3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kuz-3x-laa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="48"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0qL-SO-E4a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RkJ-se-l2h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="lNU-6D-GPL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sCR-39-1FV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ksR-tb-Qmj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sYB-dx-Rus" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906" y="-319"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Linux" width="849" height="849"/>
+        <image name="about" width="50" height="50"/>
+        <image name="fb" width="2000" height="2000"/>
+        <image name="herdin" width="1836" height="3264"/>
+        <image name="ig" width="1000" height="1000"/>
+        <image name="profil" width="50" height="50"/>
+        <image name="tg" width="256" height="256"/>
+    </resources>
+</document>
